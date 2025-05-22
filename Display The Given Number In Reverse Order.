@@ -1,0 +1,14 @@
+//Write a C-Program to Display The Given Number In Reverse Order.
+#include <stdio.h>
+int main() {
+    int in, rem, rev = 0;
+    printf("Enter a number: ");
+    scanf("%d", &in);
+    while (in > 0) {
+        rem = in % 10;
+        rev = rev * 10 + rem;
+        in = in / 10;
+    }
+    printf("Reversed number: %d\n", rev);
+    return 0;
+}
